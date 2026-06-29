@@ -4,12 +4,13 @@
     <strong>Next.js 16 · Prisma 7 · Better Auth · shadcn/ui · Tailwind CSS v4</strong>
   </p>
   <p>
-    <a href="#-sobre"><img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" alt="Status" /></a>
+    <a href="#-sobre"><img src="https://img.shields.io/badge/status-pronto-22c55e" alt="Status" /></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" /></a>
     <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16.2-black?logo=next.js" alt="Next.js 16" /></a>
     <a href="https://www.prisma.io"><img src="https://img.shields.io/badge/Prisma-7-2D3748?logo=prisma" alt="Prisma 7" /></a>
     <a href="https://www.betterauth.dev"><img src="https://img.shields.io/badge/Better_Auth-1.6-purple" alt="Better Auth" /></a>
     <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss" alt="Tailwind CSS v4" /></a>
+    <a href="https://nextprisma-boilerplate.vercel.app"><img src="https://img.shields.io/badge/deploy-Vercel-000?logo=vercel" alt="Deploy" /></a>
   </p>
 </div>
 
@@ -156,7 +157,7 @@ src/
 O projeto já inclui:
 
 - Meta tags Open Graph e Twitter Cards
-- JSON-LD com schema.org (em breve)
+- JSON-LD com schema.org (SoftwareSourceCode)
 - Robots meta index/follow
 - Sitemap (adicione com `next-sitemap`)
 - URLs amigáveis com App Router
@@ -181,13 +182,66 @@ O projeto já inclui:
 
 ## 🐳 Produção
 
-Para PostgreSQL em produção:
+O projeto está implantado no **Vercel** com deploy automático via GitHub:
+
+🔗 **https://nextprisma-boilerplate.vercel.app**
+
+### Deploy manual
+
+```bash
+npx vercel --prod
+```
+
+### PostgreSQL em produção
+
+Para trocar SQLite por PostgreSQL:
 
 1. Instale o driver PostgreSQL: `npm install @prisma/adapter-pg pg`
 2. Atualize o `DATABASE_URL` no `.env` para PostgreSQL
 3. Altere o adapter em `src/lib/prisma.ts` para `PrismaPg`
 4. Atualize o provider em `prisma/schema.prisma` para `postgresql`
 5. Rode `npx prisma migrate deploy`
+
+---
+
+## 🔄 Integração GitHub + Vercel
+
+Ao fazer push para a branch `master`, o Vercel automaticamente faz o deploy de produção:
+
+```
+git add .
+git commit -m "feat: minha alteração"
+git push
+```
+
+✅ O deploy acontece em segundos e o link de produção é atualizado.
+
+### Status do último deploy
+
+[![Vercel](https://img.shields.io/github/deployments/neveshardd/nextjs-prisma-boilerplate/production?label=deploy&logo=vercel)](https://nextprisma-boilerplate.vercel.app)
+
+---
+
+## 📜 Histórico de Commits
+
+```
+f2de551 fix: wrap useSearchParams in Suspense boundary no reset-password
+942cbde fix: remove engine option obsoleta do prisma.config.ts
+f4ad98e chore: cria LICENSE, completa README, publica no GitHub
+ec86858 fix: corrige font Geist, JSON-LD, footer links, SEO
+0c6526d feat: adiciona 404, proxy.ts, termos, privacidade, contato
+a34f286 feat: adiciona dark mode com ThemeProvider custom, avatar upload
+27b5c69 feat: adiciona Data Library, Help, Ajuda no sidebar
+9abf1cc feat: adiciona forgot/reset password, corrige import auth
+370a6d3 feat: cria Settings page fullstack com Better Auth + Prisma
+4f9cc93 feat: cria Data Library page com mock data e DataTable
+1e8c11c feat: cria Help page com FAQ
+b0ba29c refactor: remove Minha Conta, Reports, Word Assistant do sidebar
+b44bbed feat: adiciona páginas de login, registro, dashboard e landing
+8e4b090 feat: adiciona shadcn blocks dashboard-01 e login forms
+ef4652b feat: adiciona shadcn UI components via CLI
+b880140 feat: instala dependências e configura Prisma + Better Auth
+```
 
 ---
 
