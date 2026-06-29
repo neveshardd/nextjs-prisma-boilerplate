@@ -1,0 +1,14 @@
+[
+  { "id": 1, "header": "Client Overview", "type": "Summary", "status": "Done", "target": "15", "limit": "12", "reviewer": "Ana Silva" },
+  { "id": 2, "header": "Market Research Q2", "type": "Report", "status": "In Process", "target": "42", "limit": "8", "reviewer": "Carlos Mendes" },
+  { "id": 3, "header": "Competitive Analysis", "type": "Analysis", "status": "Done", "target": "28", "limit": "30", "reviewer": "Juliana Costa" },
+  { "id": 4, "header": "User Survey Results", "type": "Data", "status": "Done", "target": "35", "limit": "40", "reviewer": "Rafael Oliveira" },
+  { "id": 5, "header": "Product Roadmap 2026", "type": "Planning", "status": "In Process", "target": "10", "limit": "6", "reviewer": "Mariana Santos" },
+  { "id": 6, "header": "Financial Projections", "type": "Spreadsheet", "status": "In Process", "target": "22", "limit": "18", "reviewer": "Pedro Alves" },
+  { "id": 7, "header": "Content Inventory", "type": "Catalog", "status": "Done", "target": "50", "limit": "55", "reviewer": "Luciana Martins" },
+  { "id": 8, "header": "API Documentation v3", "type": "Technical", "status": "In Process", "target": "33", "limit": "14", "reviewer": "Assign reviewer" },
+  { "id": 9, "header": "Design System Audit", "type": "Review", "status": "Done", "target": "19", "limit": "21", "reviewer": "Assign reviewer" },
+  { "id": 10, "header": "Training Materials", "type": "Educational", "status": "In Process", "target": "27", "limit": "10", "reviewer": "Assign reviewer" },
+  { "id": 11, "header": "Social Media Calendar", "type": "Planning", "status": "Done", "target": "31", "limit": "35", "reviewer": "Fernanda Lima" },
+  { "id": 12, "header": "Bug Tracking Report", "type": "Report", "status": "In Process", "target": "14", "limit": "7", "reviewer": "Thiago Souza" }
+]
