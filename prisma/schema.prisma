@@ -4,6 +4,8 @@ generator client {
 }
 
 datasource db {
+  // PostgreSQL para produção. Descomente e configure DATABASE_URL no .env
+  // provider = "postgresql"
   provider = "sqlite"
 }
 

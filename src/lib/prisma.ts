@@ -1,5 +1,4 @@
 import { PrismaClient } from "@/generated/prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
@@ -7,8 +6,16 @@ const globalForPrisma = globalThis as unknown as {
 
 function createPrismaClient() {
   const url = process.env.DATABASE_URL ?? "file:./prisma/dev.db";
-  const adapter = new PrismaBetterSqlite3({ url });
 
+  // PostgreSQL adapter (descomente ao trocar schema.provider para postgresql)
+  // if (url.startsWith("postgresql") || url.startsWith("postgres://")) {
+  //   const { PrismaPg } = require("@prisma/adapter-pg");
+  //   const adapter = new PrismaPg(url);
+  //   return new PrismaClient({ adapter });
+  // }
+
+  const { PrismaBetterSqlite3 } = require("@prisma/adapter-better-sqlite3");
+  const adapter = new PrismaBetterSqlite3({ url });
   return new PrismaClient({ adapter });
 }
 
