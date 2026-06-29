@@ -222,29 +222,6 @@ git push
 
 ---
 
-## 📜 Histórico de Commits
-
-```
-f2de551 fix: wrap useSearchParams in Suspense boundary no reset-password
-942cbde fix: remove engine option obsoleta do prisma.config.ts
-f4ad98e chore: cria LICENSE, completa README, publica no GitHub
-ec86858 fix: corrige font Geist, JSON-LD, footer links, SEO
-0c6526d feat: adiciona 404, proxy.ts, termos, privacidade, contato
-a34f286 feat: adiciona dark mode com ThemeProvider custom, avatar upload
-27b5c69 feat: adiciona Data Library, Help, Ajuda no sidebar
-9abf1cc feat: adiciona forgot/reset password, corrige import auth
-370a6d3 feat: cria Settings page fullstack com Better Auth + Prisma
-4f9cc93 feat: cria Data Library page com mock data e DataTable
-1e8c11c feat: cria Help page com FAQ
-b0ba29c refactor: remove Minha Conta, Reports, Word Assistant do sidebar
-b44bbed feat: adiciona páginas de login, registro, dashboard e landing
-8e4b090 feat: adiciona shadcn blocks dashboard-01 e login forms
-ef4652b feat: adiciona shadcn UI components via CLI
-b880140 feat: instala dependências e configura Prisma + Better Auth
-```
-
----
-
 ## 📄 Licença
 
 Distribuído sob licença **MIT**. Veja [LICENSE](LICENSE) para mais informações.
@@ -255,8 +232,6 @@ Distribuído sob licença **MIT**. Veja [LICENSE](LICENSE) para mais informaçõ
   <p>Feito por <a href="https://github.com/neveshardd">neveshardd</a></p>
   <p>
     <a href="https://github.com/neveshardd/nextjs-prisma-boilerplate/issues">Reportar bug</a>
-    ·
-    <a href="https://github.com/neveshardd/nextjs-prisma-boilerplate/discussions">Discussões</a>
     ·
     <a href="https://github.com/neveshardd/nextjs-prisma-boilerplate/pulls">Pull Requests</a>
   </p>
